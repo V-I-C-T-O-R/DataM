@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.message.service.dao.datacenter.CustomDataReportMapper">
+    <insert id="insertReportData" parameterType="java.util.Map">
+        insert into t_data_upload_custom(pid,day,cd1,cd2,cd3,cd4,cd5,cd6,cd7,cd8,cd9,cd10,cm1,cm2,cm3,cm4,cm5,cm6,cm7,cm8,cm9,cm10)
+        VALUES(#{pid},#{day},#{cd1},#{cd2},#{cd3},#{cd4},#{cd5},#{cd6},#{cd7},#{cd8},#{cd9},#{cd10},#{cm1},#{cm2},#{cm3},#{cm4},#{cm5},#{cm6},#{cm7},#{cm8},#{cm9},#{cm10})
+    </insert>
+</mapper>

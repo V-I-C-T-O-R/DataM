@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>data-center-report</groupId>
+    <artifactId>data-app-report</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>data-app-report</name>
+    <description>data-app-report</description>
+
+    <modules>
+        <module>data-app-service</module>
+        <module>data-app-consumer</module>
+        <module>data-app-recover</module>
+    </modules>
+</project>

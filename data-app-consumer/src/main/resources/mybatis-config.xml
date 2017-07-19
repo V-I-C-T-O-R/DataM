@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 配置mybatis环境，link#http://mybatis.github.io/mybatis-3/zh/configuration.html -->
+<configuration>
+	<settings>
+		<!--规定查询数据为空是则返回null-->
+		<setting name="callSettersOnNulls" value="true"/>
+		<!-- 支持xxx_yyy 转换成 xxxYYY -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!-- 设置日志实现 -->
+		<setting name="logImpl" value="SLF4J" />
+	</settings>
+</configuration>

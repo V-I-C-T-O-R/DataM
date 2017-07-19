@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.message.service.dao.datacenter.BaseDataReportMapper">
+    <insert id="insertReportData" parameterType="java.util.Map">
+      insert into base(pidt,t,day,bt,rd,sd,av,scd,md,fg,ed,es,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16)
+      VALUES(#{pid},#{t},#{day},#{bt},#{rd},#{sd},#{av},#{scd},#{md},#{fg},#{ed},#{es},#{a1},#{a2},#{a3},#{a4},#{a5},#{a6},#{a7},#{a8},#{a9},#{a10},#{a11},#{a12},#{a13},#{a14},#{a15},#{a16})
+    </insert>
+</mapper>
