@@ -9,7 +9,6 @@
 ---------------
 DataM是基于Spring boot,Redis,Mysql,阻塞队列组成的实时数据采集服务，采用Spring boot作为运行框架，多线程异步执行任务，
 并通过线程安全队列缓冲达到较高可用的目的
-![](https://github.com/V-I-C-T-O-R/DataM/blob/master/2015031713531123860292.jpg) <br>
 
 ###技能点:<br>
 * Spring boot异步事件<br>
