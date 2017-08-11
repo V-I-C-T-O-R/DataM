@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.message.service.dao.datacenter.CustomDataReportMapper">
+<mapper namespace="com.data.recover.dao.CustomDataReportMapper">
     <insert id="insertCustomReportData" parameterType="java.util.Map">
         insert into
         t_data_upload_custom(pid,day,cd1,cd2,cd3,cd4,cd5,cd6,cd7,cd8,cd9,cd10,cm1,cm2,cm3,cm4,cm5,cm6,cm7,cm8,cm9,cm10)
         VALUES
         <foreach collection="list" item="item" index="index" separator=",">
-            (#{pid},#{day},#{cd1},#{cd2},#{cd3},#{cd4},#{cd5},#{cd6},#{cd7},#{cd8},#{cd9},#{cd10},#{cm1},#{cm2},#{cm3},#{cm4},#{cm5},#{cm6},#{cm7},#{cm8},#{cm9},#{cm10})
+            (#{item.pid},#{item.day},#{item.cd1},#{item.cd2},#{item.cd3},#{item.cd4},#{item.cd5},#{item.cd6},#{item.cd7},#{item.cd8},#{item.cd9},#{item.cd10},#{item.cm1},#{item.cm2},#{item.cm3},#{item.cm4},#{item.cm5},#{item.cm6},#{item.cm7},#{item.cm8},#{item.cm9},#{item.cm10})
         </foreach>
     </insert>
 </mapper>
